@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
-    normalize.css removes cross-browser differences in defaults, e.g.,
-    differences in how form elements appear between Firefox and IE
-    See: http://necolas.github.com/normalize.css/
-  -->
+  
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
-  <link rel="stylesheet" href="/css/application.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+  <script src="https://use.fontawesome.com/19d6629d36.js"></script>
 
   <script src="/js/jquery.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Molly FitzHarris</title>
 </head>
 <body>
-  <%= yield %>
+  <% if !@status %>
+    <div id="navigation">
+      bleep bloop
+    </div>
+  <% end %>
+  <div id="main">
+    <%= yield %>
+  </div>
 </body>
 </html>

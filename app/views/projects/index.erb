@@ -1,9 +1,8 @@
 <div id="main-content">
-  <h2 id="page-title">PROJECTS</h3>
+  <h2 id="page-title">PROJECTS</h2>
   <ul id="projects">
-    <li><a href="/projects/curious-corpus"><span class="proj-title">CuriousCorpus</span><br>Nov 2016</a></li>
-    <li><a href="/projects/health-tracker"><span class="proj-title">Health Tracker</span><br>Nov-Dec 2016</a></li>
-    <li><a href="/projects/chance-art"><span class="proj-title">Chance Art</span><br>Oct 2016</a></li>
-    <li><a href="/projects/world-building"><span class="proj-title">World Building</span><br>2015-2016</a></li>
+    <% @projects.each do |project| %>
+      <li><a href="projects/<%= project.id %>"><span class="proj-title"><%= project.name%></span><br><%= project.date %></a></a></li>
+    <% end %>
   </ul>
 </div>

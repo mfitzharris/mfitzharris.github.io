@@ -73,10 +73,12 @@ i.fa:hover {
 div#navigation {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
+  margin: 10px;
 }
 
 div#navigation h1 {
   letter-spacing: .15em;
+  margin: 0px;
 }
 
 div#navigation > * {

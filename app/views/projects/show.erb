@@ -1,17 +1,22 @@
 <div id="main-content">
   <h2 id="page-title"><a href="/projects">PROJECTS <i class="fa fa-angle-double-left" aria-hidden="true"></i></a></h2>
   <div class="col-2">
+    <h3 id="proj-title"><%= @project.name %></h3>
+    <h4 id="proj-date"><%= @project.date %></h4>
     <div id="proj-text">
       <%= @project.info %>
     </div>
     <div id="proj-links">
       <% if @project.github_url %>
-        <a href="<%= @project.github_url %>"><i class="fa fa-github" aria-hidden="true"></i> github</a>
+        <div><a href="<%= @project.github_url %>"><i class="fa fa-github" aria-hidden="true"></i> github</a></div>
       <% end %>
       <% if @project.project_url %>
-        <a href="<%= @project.project_url %>"> Demo</a>
+        <div><a href="<%= @project.project_url %>"> Demo</a></div>
       <% end %>
+      </div>
     </div>
+  <div class="col-2">
+    images will go here
   </div>
-  <div class="col-2"></div>  
-</div>
+
+  </div>

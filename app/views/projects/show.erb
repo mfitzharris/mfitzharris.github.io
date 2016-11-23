@@ -1,5 +1,6 @@
 <div id="main-content">
   <h2 id="page-title"><a href="/projects">PROJECTS <i class="fa fa-angle-double-left" aria-hidden="true"></i></a></h2>
+
   <div class="col-2">
     <h3 id="proj-title"><%= @project.name %></h3>
     <h4 id="proj-date"><%= @project.date %></h4>
@@ -15,9 +16,11 @@
       <% end %>
       </div>
     </div>
+
   <div class="col-2" id="proj-images">
     <% @project.images.each do |image| %>
       <img class=proj-image src="<%= image.local_url %>">
+      <figcaption><%= image.caption %></figcaption>
     <% end %>
   </div>
 

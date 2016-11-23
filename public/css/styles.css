@@ -15,6 +15,10 @@ div#floating {
   color: white;
 }
 
+/*a {
+  color: inherit;
+}*/
+
 h1#title { 
   text-transform: uppercase;
   font-weight: 300;
@@ -111,6 +115,11 @@ h2#page-title {
   padding-left: 3%
 }
 
+h2#page-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul#projects {
   width: 100%;
   margin: auto;
@@ -144,4 +153,43 @@ ul#projects li:hover {
 span.proj-title {
   font-weight: 600;
   font-size: 1.25em;
+}
+
+.col-2 {
+  width: 45%;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+#proj-links div {
+  width: 99%;
+  border: solid black 3px;
+  text-align: center;
+  padding: .5em 0 .5em 0;
+  margin-bottom: 1em;
+}
+
+#proj-links div a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#proj-links div a:hover {
+  text-decoration: underline;
+}
+
+#proj-links div:hover {
+  color: white;
+  border: solid #3a3937 3px;
+  background-color: #3a3937;
+}
+
+h3#proj-title {
+  margin: 0px;
+  letter-spacing: .15em;
+}
+
+h4#proj-date {
+  margin: 0px;
+  font-weight: 200;
 }

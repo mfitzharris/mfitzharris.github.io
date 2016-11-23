@@ -159,6 +159,7 @@ span.proj-title {
   width: 45%;
   display: inline-block;
   vertical-align: text-top;
+  margin-right: 10px;
 }
 
 #proj-links div {
@@ -192,4 +193,8 @@ h3#proj-title {
 h4#proj-date {
   margin: 0px;
   font-weight: 200;
+}
+
+img.proj-image {
+  max-width: 100%; 
 }

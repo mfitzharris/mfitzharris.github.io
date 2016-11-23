@@ -25,3 +25,50 @@ project_data = [
   }
 ]
 Project.create!(project_data)
+
+image_data = [
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-dr-1.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-su-1.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-su-2.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-dr-2.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-su-3.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-dr-3.png"
+  },
+  {
+    project_id: 2,
+    local_url: "/images/projects/ca-ss-1.png"
+  },
+  {
+    project_id: 2,
+    local_url: "/images/projects/ca-ss-2.png"
+  },
+  {
+    project_id: 1,
+    local_url: "/images/projects/cc-ss-1.png",
+    caption: "Analyzing the text of Hamlet"
+  },
+  {
+    project_id: 1,
+    local_url: "/images/projects/cc-ss-2.png",
+    caption: "While Hamlet was written in the 1600s, due to a limitation from our training data set - our algorithms actually predict the author's century of birth. So the predictions of 1500 are actually correct."
+  }
+]
+
+Image.create!(image_data)

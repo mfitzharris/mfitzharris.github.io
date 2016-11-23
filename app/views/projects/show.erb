@@ -15,8 +15,10 @@
       <% end %>
       </div>
     </div>
-  <div class="col-2">
-    images will go here
+  <div class="col-2" id="proj-images">
+    <% @project.images.each do |image| %>
+      <img class=proj-image src="<%= image.local_url %>">
+    <% end %>
   </div>
 
   </div>

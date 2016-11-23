@@ -25,3 +25,32 @@ project_data = [
   }
 ]
 Project.create!(project_data)
+
+image_data = [
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-dr-1.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-su-1.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-su-2.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-dr-2.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-su-3.png"
+  },
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-dr-3.png"
+  }
+]
+
+Image.create!(image_data)

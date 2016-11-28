@@ -15,10 +15,6 @@ div#floating {
   color: white;
 }
 
-/*a {
-  color: inherit;
-}*/
-
 h1#title { 
   text-transform: uppercase;
   font-weight: 300;
@@ -89,7 +85,7 @@ div#navigation > * {
   display: inline-block;
 }
 
-div#links a {
+div#links .int-link {
   text-decoration: none;
   color: white;
 }
@@ -121,13 +117,13 @@ h2#page-title a {
 }
 
 ul#projects {
-  width: 100%;
+  /*width: 100%;*/
   margin: auto;
 }
 
 ul#projects li {
   display: inline-block;
-  width: 30%;
+  width: 40%;
   padding: 30px;
   margin: 2%;
   text-align: center;
@@ -191,10 +187,21 @@ h3#proj-title {
 }
 
 h4#proj-date {
-  margin: 0px;
+  margin: 0px 0px 1em 0px;
   font-weight: 200;
+  border-bottom: solid black 1px;
 }
 
 img.proj-image {
   max-width: 100%; 
+}
+
+.nav-link-button {
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.straight-borders {
+  border-radius: none;
 }

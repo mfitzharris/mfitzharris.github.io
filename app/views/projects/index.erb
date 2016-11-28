@@ -1,7 +1,7 @@
 <div id="main-content">
   <h2 id="page-title">PROJECTS</h2>
   <ul id="projects">
-    <% @projects.each do |project| %>
+    <% all_projects.each do |project| %>
       <li><a class="proj-link int-link" href="projects/<%= project.id %>"><span class="proj-title"><%= project.name%></span><br><%= project.date %></a></a></li>
     <% end %>
   </ul>

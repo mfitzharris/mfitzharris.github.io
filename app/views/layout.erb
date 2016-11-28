@@ -14,19 +14,23 @@
   <title>Molly FitzHarris</title>
 </head>
 <body>
-  <% if !@status %>
-    <div id="navigation">
-      <h1 id="title">Molly<br> FitzHarris</h1>
-      <div id="links">
-        <a href="/about">ABOUT</a> |
-        <a href="/projects">PROJECTS</a> 
-        <a class="icon" title="github" href="https://github.com/mfitzharris"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-        <a class="icon" title="linkedin" href="https://www.linkedin.com/in/molly-fitzharris"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
-        <a class="icon" title="twitter" href="https://twitter.com/mollyifitz"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-        <a class="icon" title="email" href="mailto:molly.fitzharris@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
-      </div>
+
+  <div id="navigation">
+    <h1 id="title">Molly<br> FitzHarris</h1>
+    <div id="links">
+      <a class="int-link" href="/about">ABOUT</a> |
+      <a class="int-link" href="/projects">PROJECTS</a> 
+      <a class="icon" title="github" href="https://github.com/mfitzharris"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+      <a class="icon" title="linkedin" href="https://www.linkedin.com/in/molly-fitzharris"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+      <a class="icon" title="twitter" href="https://twitter.com/mollyifitz"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+      <a class="icon" title="email" href="mailto:molly.fitzharris@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
     </div>
-  <% end %>
-  <%= yield %>
+  </div>
+
+  <div id="content-wrapper">
+    <%= yield %>
+  </div>
+
 </body>
+
 </html>

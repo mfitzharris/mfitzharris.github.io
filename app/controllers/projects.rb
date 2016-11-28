@@ -1,9 +1,17 @@
 get '/projects' do
   @projects = Project.all
-  erb :'/projects/index'
+  if request.xhr?
+    erb :'/projects/index', layout: false
+  else
+    erb :'/projects/index'
+  end
 end
 
 get '/projects/:id' do 
   @project = Project.find(params[:id])
-  erb :'/projects/show'
+  if request.xhr?
+    erb :'/projects/show', layout: false
+  else
+    erb :'/projects/show'
+  end
 end

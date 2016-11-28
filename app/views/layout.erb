@@ -4,29 +4,50 @@
   
   <link rel="stylesheet" href="/css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
   <script src="https://use.fontawesome.com/19d6629d36.js"></script>
 
   <script src="/js/jquery.js"></script>
   <script src="/js/application.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <title>Molly FitzHarris</title>
 </head>
 <body>
-  <% if !@status %>
-    <div id="navigation">
-      <h1 id="title">Molly<br> FitzHarris</h1>
-      <div id="links">
-        <a href="/about">ABOUT</a> |
-        <a href="/projects">PROJECTS</a> 
-        <a class="icon" title="github" href="https://github.com/mfitzharris"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-        <a class="icon" title="linkedin" href="https://www.linkedin.com/in/molly-fitzharris"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
-        <a class="icon" title="twitter" href="https://twitter.com/mollyifitz"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-        <a class="icon" title="email" href="mailto:molly.fitzharris@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
-      </div>
+
+  <div id="navigation">
+    <h1 id="title">Molly<br> FitzHarris</h1>
+    <div id="links">
+      <a class="int-link" href="/about">ABOUT</a>
     </div>
-  <% end %>
-  <%= yield %>
+    <div class="dropdown">
+      <button class="dropdown-toggle nav-link-button" type="button" data-toggle="dropdown">PROJECTS
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu straight-borders">
+        <li><a href="/projects"><b>All Projects</b></a></li>
+        <% all_projects.each do |project| %>
+          <li><a class="int-link" href="projects/<%= project.id %>"><%= project.name %></a></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="dropdown-toggle nav-link-button" type="button" data-toggle="dropdown">LINKS
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu straight-borders">
+        <li><a class="icon" title="github" href="https://github.com/mfitzharris"><i class="fa fa-github fa-lg" aria-hidden="true"></i> github</a></li>
+        <li><a class="icon" title="linkedin" href="https://www.linkedin.com/in/molly-fitzharris"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> linkedin</a></li>
+        <li><a class="icon" title="twitter" href="https://twitter.com/mollyifitz"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> twitter</a></li>
+        <li><a class="icon" title="email" href="mailto:molly.fitzharris@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> email</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content-wrapper">
+    <%= yield %>
+  </div>
+
 </body>
+
 </html>

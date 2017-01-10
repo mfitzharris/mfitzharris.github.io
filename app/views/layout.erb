@@ -28,7 +28,7 @@
       <ul class="dropdown-menu straight-borders">
         <li><a href="/projects"><b>All Projects</b></a></li>
         <% all_projects.each do |project| %>
-          <li><a class="int-link" href="projects/<%= project.id %>"><%= project.name %></a></li>
+          <li><a class="int-link" href="/projects/<%= project.id %>"><%= project.name %></a></li>
         <% end %>
       </ul>
     </div>

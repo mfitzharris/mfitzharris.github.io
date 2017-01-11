@@ -151,10 +151,10 @@ span.proj-title {
 }
 
 .col-2 {
-  width: 45%;
+  width: 49.5%;
   display: inline-block;
   vertical-align: text-top;
-  margin-right: 10px;
+  /*margin-right: 0.25%;*/
 }
 
 #proj-links div {
@@ -229,5 +229,12 @@ div#line-1 {
 
 span.pas-bold {
   font-weight: 700;
-  text-decoration: underline;
+  letter-spacing: .1em;
+  /*border-bottom: solid black 1px;*/
+}
+
+p.mini-header {
+  /*font-weight: 700;*/
+  border-bottom: solid black 1px;
+  letter-spacing: .1em;
 }

@@ -11,7 +11,6 @@ project_data = [
     name: "Chance Art",
     date: "Oct 2016",
     github_url: "tbd",
-    project_url: "tbd",
     info: "<p>A one-day project with the underlying intention of understanding the usage of APIs.</p>
     <p>My intention when approaching this project was to create a simple app for discovering, and thereby gaining inspiration from, new works of art and/or other ephemera in a non-linear manner.</p>
     <p>While, initially only two art collection APIs were used (<a href='http://www.harvardartmuseums.org/collections/api'>The Harvard Art Museums' API</a> and <a href='https://collection.cooperhewitt.org/api/'>The Cooper Hewitt, Smithsonian Design Museum's API</a>) I have plans of incorporating additional APIs to further extend the reach of the program</p>"
@@ -27,6 +26,10 @@ project_data = [
 Project.create!(project_data)
 
 image_data = [
+  {
+    project_id: 3,
+    local_url: "/images/projects/wb-su-4.png"
+  },
   {
     project_id: 3,
     local_url: "/images/projects/wb-dr-1.png"

@@ -72,7 +72,7 @@ i.splash-icon:hover {
 div#navigation {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
-  margin: 20px 10px 10px 20px;
+  margin: 20px 10px 0px 20px;
   margin-left: 5%;
 }
 
@@ -96,7 +96,6 @@ div#links a:hover {
 }
 
 div#main-content {
-  /*border: solid black 5px;*/
   background-color: white;
   width: 90%;
   margin: auto;
@@ -237,4 +236,9 @@ p.mini-header {
   /*font-weight: 700;*/
   border-bottom: solid black 1px;
   letter-spacing: .1em;
+}
+
+div.featherlight-content {
+  width: 50%;
+  margin: auto;
 }

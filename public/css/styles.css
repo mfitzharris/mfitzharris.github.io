@@ -242,3 +242,10 @@ div.featherlight-content {
   width: 50%;
   margin: auto;
 }
+
+input.search-box {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}

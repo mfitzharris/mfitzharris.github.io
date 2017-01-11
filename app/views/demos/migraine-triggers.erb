@@ -1,0 +1,12 @@
+<div id="main-content" ng-app="migraineTriggers">
+  <h2 id="page-title">MIGRAINE TRIGGER SEARCH</h2>
+  <div ng-controller="triggersController">
+    <input class="search-box" type="text" placeholder="Is it a migraine trigger? start typing to search >>" ng-model="search">
+    <ul>
+      <li ng-repeat="trigger in triggers | orderBy: 'name' | filter: search">{{trigger.name}}<br><span class="grey"></span></li>
+    </ul>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type="text/javascript" src="/js/migraine-triggers.js"></script

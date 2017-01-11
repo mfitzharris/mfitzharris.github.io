@@ -4,7 +4,7 @@
     <% all_projects.each do |project| %>
       <li>
         <div class="name-date col-2">
-          <a class="proj-link int-link" href="projects/<%= project.id %>"><span class="proj-title"><%= project.name%></span><br><%= project.date %></a></a>
+          <a class="proj-link int-link" href="projects/<%= project.id %>"><span class="proj-title"><%= project.name%></span><br><%= project.date %> <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></a>
         </div>
         <div class="short-info col-2">
           <%= project.short_info %>

@@ -108,7 +108,7 @@ h2#page-title {
   font-size: 2em;
   border-bottom: solid black 2px;
   letter-spacing: .15em;
-  padding-left: 3%
+  padding-left: 0;
 }
 
 h2#page-title a {
@@ -204,4 +204,20 @@ img.proj-image {
 
 .straight-borders {
   border-radius: 0;
+}
+
+.about-header {
+  border-bottom: solid black 1px;
+}
+
+.about-link {
+  color: black;
+  border: solid black 1px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.about-link:hover {
+  color: white;
+  background: #3a3937;
 }

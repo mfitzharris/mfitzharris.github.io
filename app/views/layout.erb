@@ -21,42 +21,49 @@
   <title>Molly FitzHarris</title>
 </head>
 <body>
+  <div id="page-wrapper">
 
-  <div id="navigation">
-    <h1 id="title">Molly<br> FitzHarris</h1>
-    <div id="links">
-      <a class="int-link" href="/about">ABOUT</a>
+    <div id="navigation">
+      <h1 id="title">Molly<br> FitzHarris</h1>
+      <div id="links">
+        <a class="int-link" href="/about">ABOUT</a>
+
+
+
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle nav-link-button" type="button" data-toggle="dropdown">PROJECTS
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu straight-borders">
+          <li><a href="/projects"><b>All Projects</b></a></li>
+          <% all_projects.each do |project| %>
+            <li><a class="int-link" href="/projects/<%= project.id %>"><%= project.name %></a></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle nav-link-button" type="button" data-toggle="dropdown">LINKS
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu straight-borders">
+
+          <li><a class="icon" title="github" href="https://github.com/mfitzharris"><i class="fa fa-github fa-lg" aria-hidden="true"></i> github</a></li>
+
+          <li><a class="icon" title="linkedin" href="https://www.linkedin.com/in/molly-fitzharris"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> linkedin</a></li>
+
+          <li><a class="icon" title="twitter" href="https://twitter.com/mollyifitz"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> twitter</a></li>
+
+          <li><a class="icon" title="email" href="mailto:molly.fitzharris@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> email</a></li>
+          
+        </ul>
+      </div>
     </div>
-    <div class="dropdown">
-      <button class="dropdown-toggle nav-link-button" type="button" data-toggle="dropdown">PROJECTS
-      <span class="caret"></span></button>
-      <ul class="dropdown-menu straight-borders">
-        <li><a href="/projects"><b>All Projects</b></a></li>
-        <% all_projects.each do |project| %>
-          <li><a class="int-link" href="/projects/<%= project.id %>"><%= project.name %></a></li>
-        <% end %>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <button class="dropdown-toggle nav-link-button" type="button" data-toggle="dropdown">LINKS
-      <span class="caret"></span></button>
-      <ul class="dropdown-menu straight-borders">
 
-        <li><a class="icon" title="github" href="https://github.com/mfitzharris"><i class="fa fa-github fa-lg" aria-hidden="true"></i> github</a></li>
-
-        <li><a class="icon" title="linkedin" href="https://www.linkedin.com/in/molly-fitzharris"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> linkedin</a></li>
-
-        <li><a class="icon" title="twitter" href="https://twitter.com/mollyifitz"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> twitter</a></li>
-
-        <li><a class="icon" title="email" href="mailto:molly.fitzharris@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> email</a></li>
-        
-      </ul>
+    <div id="content-wrapper">
+      <%= yield %>
     </div>
   </div>
 
-  <div id="content-wrapper">
-    <%= yield %>
-  </div>
+  _
 
 </body>
 

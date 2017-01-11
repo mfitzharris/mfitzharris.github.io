@@ -222,7 +222,8 @@ img.proj-image {
 .about-link {
   color: black;
   border: solid black 1px;
-  padding: 2px;
+  padding: 4px;
+  letter-spacing: .15em;
 }
 
 .about-link:hover {
@@ -231,7 +232,7 @@ img.proj-image {
 }
 
 div#line-1 {
-  margin-bottom: 7px;
+  margin-bottom: 1em;
 }
 
 span.pas-bold {

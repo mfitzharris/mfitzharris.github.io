@@ -3,9 +3,9 @@ project_data = [
     name: "CuriousCorpus", 
     date: "Nov 2016",
     github_url: "https://github.com/npentella/CuriousCorpus",
-    info: "<p>An eight-day capstone project at DBC. We implemented an algorithmic solution to identify the period of origin of an inputted passage of literature using NLP and machine learning. The project was written in Python leveraging the Guttenberg corpora and SciKit-learn library. Through the training of our models we were able to achieve 81/%/ accuracy in predicting the period of origin.</p>
-  <p>My role included the setup of the database, researching corporas to train our algorithm with, the setup of the Flask-based webapp, and the development of the naïve bayes classifier.</p>
-  <p>This project is not currently deployed.</p>",
+    info: "<p>(Python & SciKit-Learn)</p>
+    <p>My capstone project at DBC, CuriousCorpus is a method of predicting an inputted passage of text's period of origin with up to 81\% accuracy. For example when analyzing the text of Emily Brontë's Wuthering Heights our algorithm correctly predicts 1800 as the century in which is was written.</p>
+    <p>The project was written in Python leveraging the SciKit-learn library. Through the training of our models (multinomial naïve bayes, random forest, and support vector machine) with Project Gutenberg's 53,000 free public-domain ebooks we were able to move improve initial 38\% accuracy to a high of 81%. My role included researching corporas with which to train our algorithm, the setup and seeding of the database, and development of the naïve bayes classifier.</p>",
   short_info: "(Python) Capstone project at DBC. An app that detects the period of origin of an inputted piece of text (ie: a book)."
   },
   {
@@ -13,14 +13,16 @@ project_data = [
     date: "Dec 2016",
     github_url: "https://github.com/mfitzharris/migraine-triggers",
     project_url: "/demos/migraine-triggers",
-    info: "<p>A quick project done while learning Angular to take advantage of the dynamic search functions that come preloaded. This project is the first part in a migraine tracking app that I plan to build (with even further plans of a full-blown chronic-illness tracking app) that can connect triggers like these to 'bad days'.</p>",
+    info: "<p>(JavaScript & Angular & HTML</p>
+    <p>A quick project done while learning Angular to take advantage of the dynamic search functions that come preloaded. This project is the first part in a migraine tracking app that I plan to build (with even further plans of a full-blown chronic-illness tracking app) that can connect triggers like these to 'bad days'.</p>",
     short_info: "(JavaScript/Angular & HTML) A quick project done while learning Angular to take advantage of Angular's dynamic search functions."
   },
   {
     name: "Chance Art",
     date: "Oct 2016",
     github_url: "tbd",
-    info: "<p>A one-day project with the underlying intention of understanding the usage of APIs.</p>
+    info: "<p>(JavaScript & Ruby)</p>
+    <p>A one-day project with the underlying intention of understanding the usage of APIs.</p>
     <p>My intention when approaching this project was to create a simple app for discovering, and thereby gaining inspiration from, new works of art and/or other ephemera in a non-linear manner.</p>
     <p>While, initially only two art collection APIs were used (<a href='http://www.harvardartmuseums.org/collections/api'>The Harvard Art Museums' API</a> and <a href='https://collection.cooperhewitt.org/api/'>The Cooper Hewitt, Smithsonian Design Museum's API</a>) I have plans of incorporating additional APIs to further extend the reach of the program</p>",
     short_info: "(JavaScript & Ruby) A simple app for discovering, and thereby gaining inspiration from, new works of art and/or other ephemera in a non-linear manner. "
@@ -28,7 +30,8 @@ project_data = [
   {
     name: "World Building",
     date: "2014 - ?",
-    info: "<p>A thought experiment of sorts that began with a simple doodle of a dress in January of 2014, I view it as a way of maintaining focus in continuing to learn about new areas of art/art history/architecture. By building a world from scratch, I have researched real-life examples of government, architecture, education, transportation, language, currency, floristry, music & dance, city structures, maritime culture, traditional medicines, fashion, and the many ways of denoting status via dress.</p>
+    info: "<p>(3D Modeling/Sketchup & drawing & writing)
+    <p>A thought experiment of sorts that began with a simple doodle of a dress in January of 2014, I view it as a way of maintaining focus in continuing to learn about new areas of art/art history/architecture. By building a world from scratch, I have researched real-life examples of government, architecture, education, transportation, language, currency, floristry, music & dance, city structures, maritime culture, traditional medicines, fashion, and the many ways of denoting status via dress.</p>
     <p>The main country in this project (though, if I come back to this project, I hope to flesh out more of the region) is known locally as Bráhelahn(formally Bráhelahen). The residents are referred to as Bráhlahen, and the major language spoken is MáBráiy (or simply Bráiy). There is a alchemy-like practice of floristry in this Bráhelahn with a major school in the large port town of Huurehn. </p>
     <p>Much of this project exists in endless bullet points in numerous google docs, but I have also expressed some of the concepts (mainly fashion, floristry, and architecture) through drawing and the use of SketchUp.</p>",
     short_info: "(3D Modeling & drawing & writing) A thought experiment of sorts, I use this project to structure otherwise aimless doodling and research."

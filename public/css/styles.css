@@ -115,18 +115,26 @@ h2#page-title a {
 }
 
 ul#projects {
-  /*width: 100%;*/
-  margin: auto;
+  margin: none;
+  padding: 0px;
 }
 
 ul#projects li {
-  display: inline-block;
-  width: 40%;
+  list-style: none;
+  width: 100%;
   padding: 30px;
-  margin: 2%;
+  margin-bottom: 2%;
   text-align: center;
-  border: solid black 3px;
+  border: solid black 2px;
   letter-spacing: .15em;
+}
+
+/*div.name-date{
+  border-right: solid black 1px;
+}*/
+
+div.short-info {
+  text-align: left;
 }
 
 ul#projects li a {
@@ -146,7 +154,7 @@ ul#projects li:hover {
 
 span.proj-title {
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 .col-2 {
@@ -239,8 +247,7 @@ p.mini-header {
 }
 
 div.featherlight-content {
-  width: 50%;
-  margin: auto;
+  max-width: 75%;
 }
 
 input.search-box {

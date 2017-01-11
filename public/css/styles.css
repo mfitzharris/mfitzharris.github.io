@@ -115,18 +115,26 @@ h2#page-title a {
 }
 
 ul#projects {
-  /*width: 100%;*/
-  margin: auto;
+  margin: none;
+  padding: 0px;
 }
 
 ul#projects li {
-  display: inline-block;
-  width: 40%;
+  list-style: none;
+  width: 100%;
   padding: 30px;
-  margin: 2%;
+  margin-bottom: 2%;
   text-align: center;
   border: solid black 3px;
   letter-spacing: .15em;
+}
+
+/*div.name-date{
+  border-right: solid black 1px;
+}*/
+
+div.short-info {
+  text-align: left;
 }
 
 ul#projects li a {

@@ -2,7 +2,14 @@
   <h2 id="page-title">PROJECTS</h2>
   <ul id="projects">
     <% all_projects.each do |project| %>
-      <li><a class="proj-link int-link" href="projects/<%= project.id %>"><span class="proj-title"><%= project.name%></span><br><%= project.date %></a></a></li>
+      <li>
+        <div class="name-date col-2">
+          <a class="proj-link int-link" href="projects/<%= project.id %>"><span class="proj-title"><%= project.name%></span><br><%= project.date %></a></a>
+        </div>
+        <div class="short-info col-2">
+          <%= project.short_info %>
+        </div>
+      </li>
     <% end %>
   </ul>
 </div>

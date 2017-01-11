@@ -35,11 +35,49 @@ project_data = [
     <p>The main country in this project (though, if I come back to this project, I hope to flesh out more of the region) is known locally as Bráhelahn(formally Bráhelahen). The residents are referred to as Bráhlahen, and the major language spoken is MáBráiy (or simply Bráiy). There is a alchemy-like practice of floristry in this Bráhelahn with a major school in the large port town of Huurehn. </p>
     <p>Much of this project exists in endless bullet points in numerous google docs, but I have also expressed some of the concepts (mainly fashion, floristry, and architecture) through drawing and the use of SketchUp.</p>",
     short_info: "(3D Modeling & drawing & writing) A thought experiment of sorts, I use this project to structure otherwise aimless doodling and research."
+  },
+  {
+    name: "Fantastic Game",
+    date: "Oct 2016",
+    github_url: "https://github.com/lauframo/fantastic-game-app",
+    project_url: "http://peaceful-sierra-68868.herokuapp.com/",
+    info: "<p>(Ruby & Rails)</p>
+    <p>A three-day team project at DBC, simulating the interaction between a developer and client, we created an online hub for board game enthusiasts where they can access the most popular games, share their knowledge, showcase their own game library and connect with fellow enthusiasts. Focusing on test-driven-development during setup, this project was written in Ruby, utilizing the Rails framework and the BGG API.</p>
+    <p>I personally focused on the interactions between users and the development of a 'friendship' model, ensuring that certain elements of the site could only be viewed if you were a confirmed friend with another user. I also contributed the final touches of the styling/css.</p>",
+    short_info: "(Ruby & Rails)A team project at DBC simulating the interaction with a client, we created an app to allow board game fans to access popular games, share their knowledge, showcase their own game library and connect with fellow fans."
   }
 ]
 Project.create!(project_data)
 
 image_data = [
+  {
+    project_id: 5,
+    local_url: "/images/projects/fg-ss-1.png"
+  },
+  {
+    project_id: 5,
+    local_url: "/images/projects/fg-ss-2.png"
+  },
+  {
+    project_id: 5,
+    local_url: "/images/projects/fg-ss-3.png"
+  },
+  {
+    project_id: 5,
+    local_url: "/images/projects/fg-ss-4.png"
+  },
+  {
+    project_id: 5,
+    local_url: "/images/projects/fg-ss-5.png"
+  },
+  {
+    project_id: 5,
+    local_url: "/images/projects/fg-ss-6.png"
+  },
+  {
+    project_id: 5,
+    local_url: "/images/projects/fg-ss-7.png"
+  },
   {
     project_id: 4,
     local_url: "/images/projects/wb-su-4.png"

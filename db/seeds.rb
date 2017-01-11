@@ -1,11 +1,18 @@
 project_data = [
   {
-    name: "CuriousCorpus",
+    name: "CuriousCorpus", 
     date: "Nov 2016",
     github_url: "https://github.com/npentella/CuriousCorpus",
     info: "<p>An eight-day capstone project at DBC. We implemented an algorithmic solution to identify the period of origin of an inputted passage of literature using NLP and machine learning. The project was written in Python leveraging the Guttenberg corpora and SciKit-learn library. Through the training of our models we were able to achieve 81/%/ accuracy in predicting the period of origin.</p>
   <p>My role included the setup of the database, researching corporas to train our algorithm with, the setup of the Flask-based webapp, and the development of the naïve bayes classifier.</p>
   <p>This project is not currently deployed.</p>"
+  },
+  {
+    name: "Migraine Trigger Search",
+    date: "Dec 2016",
+    github_url: "https://github.com/mfitzharris/migraine-triggers",
+    project_url: "/demos/migraine-triggers",
+    info: "<p>A quick project done while learning Angular to take advantage of the dynamic search functions that come preloaded. This project is the first part in a migraine tracking app that I plan to build (with even further plans of a full-blown chronic-illness tracking app) that can connect triggers like these to 'bad days'.</p>"
   },
   {
     name: "Chance Art",
@@ -27,40 +34,52 @@ Project.create!(project_data)
 
 image_data = [
   {
-    project_id: 3,
+    project_id: 4,
     local_url: "/images/projects/wb-su-4.png"
   },
   {
-    project_id: 3,
+    project_id: 4,
     local_url: "/images/projects/wb-dr-1.png"
   },
   {
-    project_id: 3,
+    project_id: 4,
     local_url: "/images/projects/wb-su-1.png"
   },
   {
-    project_id: 3,
+    project_id: 4,
     local_url: "/images/projects/wb-su-2.png"
   },
   {
-    project_id: 3,
+    project_id: 4,
     local_url: "/images/projects/wb-dr-2.png"
   },
   {
-    project_id: 3,
+    project_id: 4,
     local_url: "/images/projects/wb-su-3.png"
   },
   {
-    project_id: 3,
+    project_id: 4,
     local_url: "/images/projects/wb-dr-3.png"
   },
   {
-    project_id: 2,
+    project_id: 3,
     local_url: "/images/projects/ca-ss-1.png"
   },
   {
-    project_id: 2,
+    project_id: 3,
     local_url: "/images/projects/ca-ss-2.png"
+  },
+  {
+    project_id: 2,
+    local_url: "/images/projects/ms-ss-1.png"
+  },
+  {
+    project_id: 2,
+    local_url: "/images/projects/ms-ss-2.png"
+  },
+  {
+    project_id: 2,
+    local_url: "/images/projects/ms-ss-3.png"
   },
   {
     project_id: 1,
@@ -71,7 +90,7 @@ image_data = [
     project_id: 1,
     local_url: "/images/projects/cc-ss-2.png",
     caption: "While Hamlet was written in the 1600s, due to a limitation from our training data set - our algorithms actually predict the author's century of birth. So the predictions of 1500 are actually correct."
-  }
+  },
 ]
 
 Image.create!(image_data)

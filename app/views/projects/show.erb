@@ -20,9 +20,11 @@
 
   <div class="col-2" id="proj-images">
     <% @project.images.each do |image| %>
-      <img class=proj-image src="<%= image.local_url %>">
+      <a href="#" data-featherlight="<%= image.local_url %>"><img class=proj-image src="<%= image.local_url %>"></a>
       <figcaption><%= image.caption %></figcaption>
     <% end %>
   </div>
+
+  div#my-moda
 
   </div>

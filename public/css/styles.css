@@ -237,3 +237,8 @@ p.mini-header {
   border-bottom: solid black 1px;
   letter-spacing: .1em;
 }
+
+div.featherlight-content {
+  width: 50%;
+  margin: auto;
+}

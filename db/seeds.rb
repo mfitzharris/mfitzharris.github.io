@@ -150,11 +150,11 @@ image_data = [
   },
   {
     project_id: 6,
-    local_url: "/images/projects/cca-ss-1.png"
+    local_url: "/images/projects/cca-ss-2.png"
   },
   {
     project_id: 6,
-    local_url: "/images/projects/cca-ss-1.png"
+    local_url: "/images/projects/cca-ss-3.png"
   }
 ]
 

@@ -1,5 +1,5 @@
 helpers do 
   def all_projects
-    Project.all
+    Project.all.reverse
   end
 end

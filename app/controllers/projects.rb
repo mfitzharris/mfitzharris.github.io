@@ -1,5 +1,5 @@
 get '/projects' do
-  @projects = Project.all
+  @projects = Project.all.reverse
 
   erb :'/projects/index'
 
